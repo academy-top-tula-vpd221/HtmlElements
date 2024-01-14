@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms elements</title>
+    <style>
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="script.php"
+          method="post"
+          autocomplete="on"
+          name="form_main"
+          id="">
+        <fieldset>
+            <legend>Names Users:</legend>
+            <label for="user_name">Name</label><br>
+            <input type="text"
+                    name="user_name" id="" 
+                    value=""
+                    placeholder="Bobby"
+                    required><br>
+            <label>Last Name: <br> 
+                <input type="text"
+                    name="user_lastname" id="">
+            </label>
+            <br><br>
+        </fieldset>
+        
+        <input type="text" form="form_main" value="" name="" id="" hidden>
+        <input type="text" value="Hello" readonly size="20" name="input_text" id="input_text"><br>
+        <input type="button" value="Button" name="input_button"><br>
+        <input type="password" 
+            minlength="3"
+            maxlength="10"
+            name="input_password" 
+            id=""><br>
+        <input type="search" name="input_search" id=""><br>
+        <input type="tel" pattern="\d{3}-\d{2}-\d{2}" name="input_tel" id=""><br>
+        <input type="url" name="input_url" id=""><br>
+        <input type="email" name="input_email" id=""><br>
+
+        <input type="date" name="input_date" id=""><br>
+        <input type="time" name="input_time" id=""><br>
+        <input type="datetime-local" name="input_datetime" id=""><br>
+        <input type="number" 
+                min="20"
+                max="60"
+                step="2"
+                name="input_number" id=""><br>
+        <input type="range" 
+                min="20"
+                max="60"
+                step="5"
+                value="20"
+                name="input_range" id=""><br>
+        <input type="color" name="input_color" id=""><br>
+        <label for="">
+            Male
+            <input type="checkbox" name="input_checkbox" id="" value="male"><br>
+        </label>
+        
+        <input type="radio" name="input_radio" value="cpp">
+        <label for="input_radio">C++</label><br>
+        <input type="radio" name="input_radio" value="cs">
+        <label for="input_radio">C#</label><br>
+        <input type="radio" name="input_radio" value="js">
+        <label for="input_radio">JavaScript</label><br>
+
+        <input type="file" name="input_file" multiple>
+
+        <br><br>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset" name="" id="">
+        <br><br><br>
+
+        <select name="select_form" id="" multiple size="3">
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+        </select>
+
+        <br><br><br>
+        <label for="list">Transport: </label>
+        <input type="text" 
+               name="input_transport" 
+               id=""
+               list="list">
+        <datalist name="list" id="list">
+            <option value="Car">
+            <option value="Train">
+            <option value="Airplane">
+            <option value="Ship">
+        </datalist>
+
+        <div>
+            <label for="cities">Cities:
+                <select name="cities" id="">
+                    <optgroup label="Russia">
+                        <option value="moscow">Moscow</option>
+                        <option value="tula">Tula</option>
+                        <option value="orel">Orel</option>
+                    </optgroup>
+                    <optgroup label="Usa">
+                        <option value="new-york">New York</option>
+                        <option value="las-ang">Los Angeles</option>
+                        <option value="boston">Boston</option>
+                    </optgroup>
+                    <optgroup label="Germany">
+                        <option value="berlin">Berlin</option>
+                        <option value="gamburg">Gamburg</option>
+                        <option value="munchen">Munchen</option>
+                    </optgroup>
+                </select>
+
+            </label>
+        </div>
+
+        <textarea name="comment" 
+                id="" 
+                cols="30" 
+                rows="10"
+                wrap="off">
+        </textarea>
+        <br><br><br>
+        <p><progress min="0" max="100" value="30"><span>30</span>%</progress></p>
+        <br><br><br>
+        <meter min="10" 
+                max="50" 
+                value="11"
+                low="15"
+                high="45"></meter>
+        <meter min="10" 
+                max="50" 
+                value="21"
+                low="15"
+                high="45"></meter>
+        <meter min="10" 
+                max="50" 
+                value="31"
+                low="15"
+                high="45"></meter>
+        <meter min="10" 
+                max="50" 
+                value="41"
+                low="15"
+                high="45"></meter>
+        <meter min="10" 
+                max="50" 
+                value="49"
+                low="15"
+                high="45"
+                optimum="30"></meter>
+        
+        <br><br><br>
+    </form>
+</body>
+</html>

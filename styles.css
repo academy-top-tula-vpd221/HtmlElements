@@ -1,0 +1,22 @@
+*{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: magenta; 
+    border: 1px solid black;
+}
+
+ul {
+
+}
+
+.gold-text{
+    color: gold;
+}
+
+#p-aqua{
+    color: aqua;
+}

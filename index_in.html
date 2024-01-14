@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встраиваимые элементы</title>
+</head>
+<body>
+    <img src="" alt="">
+    <picture>
+        <source
+            media="(max-width: 900px)"
+            srcset="images/rec_green.png 800w,
+                    images/rec_red.png 400w"            
+        >
+        <img src="images/rec_blue.png" alt="">
+    </picture>
+    <iframe width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/fcivbyeTpqM?si=T6Jnf-RIxSA0Goxa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+    <div style="position:relative;overflow:hidden;">
+        <a href="https://yandex.ru/maps/15/tula/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тула</a>
+        <a href="https://yandex.ru/maps/15/tula/?ll=37.621477%2C54.183820&utm_medium=mapframe&utm_source=maps&z=14.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.621477%2C54.183820&z=14.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+    <video 
+        autoplay
+        muted
+        controls
+        loop
+        width="500"
+        height="300"
+        poster="">
+        <source type="video/mp4" src="D:/video/2023-11-25 13-27-47.mkv">
+    </video>
+    <audio src="">
+        
+    </audio>
+</body>
+</html>
