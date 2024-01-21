@@ -1,0 +1,52 @@
+*{
+    font-size: 30px;
+}
+
+div{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+.bg-blue{
+    background-color: blue;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+.bg-green{
+    background-color: green;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    z-index: 1;
+}
+
+.bg-red{
+    background-color: red;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    z-index: 1;
+}
+
+.wrap{
+    width: 100%;
+    padding-left: 200px;
+    height: auto;
+    margin-left: 500px;
+    position: relative;
+}
+
+.d-float{
+    float: left;
+}
+
+.d-z{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin: 0;
+}

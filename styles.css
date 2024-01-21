@@ -1,17 +1,14 @@
-*{
+/* *{
+
     font-size: 30px;
-    margin: 0;
-    padding: 0;
 }
 
-p {
+p, h1, h2, h3  {
     color: magenta; 
     border: 1px solid black;
 }
 
-ul {
 
-}
 
 .gold-text{
     color: gold;
@@ -19,4 +16,178 @@ ul {
 
 #p-aqua{
     color: aqua;
+}
+
+.div1{
+    margin: 20px;
+    width: 600px;
+}
+
+.div1 > p{
+    color: red;
+}
+
+h1 ~ p,
+h2 + p {
+    color: blue;
+}
+
+[href]{
+    color: green;
+}
+
+[alt]{
+    border: 5px blue solid;
+}
+
+img{
+    width: 300px;
+}
+
+.w200{
+    width: 200px;
+}
+
+[title ^= "Hello"]{
+    color:yellow;
+}
+
+a{
+    color: magenta;
+    text-decoration: none;
+}
+
+a:visited{
+    color: green;
+}
+
+a:active{
+    color: darkgoldenrod;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.box:hover{
+    background-color: blue;
+}
+
+input:focus{
+    background-color: aqua;
+}
+
+li:nth-child(odd){
+    color: red;
+}
+
+li:first-child{
+    color:aqua;
+}
+li:last-child{
+    color:gold;
+}
+
+.buk::first-letter{
+    font-size: 70px;
+    color: red;
+}
+
+.buk::first-line{
+    text-decoration: underline;
+} */
+
+/*
+div{
+    color: red;
+    height: 200px;
+}
+
+.w70p{
+    width: 70%;
+}
+
+.w40p{
+    width: 40%;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+    width: inherit;
+}
+
+*/
+
+/*
+p{
+    text-decoration: underline;
+}
+
+.red-text{
+    color:red;
+}
+
+
+p{
+    font-style: italic;
+}
+*/
+
+div{
+    
+    
+}
+
+.d1{
+    display: inline-block;
+
+    width: 70%;
+    height: 100px;
+    min-width: 200px;
+    max-width: 600px;
+
+    background-color: red;
+
+    overflow: auto;
+}
+
+.d2{
+    margin-top: 60px;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+}
+
+.span-div{
+    display: block;
+    background-color: aquamarine;
+    width: 600px;
+}
+
+.d300{
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.d300a{
+    width: 300px;
+    height: 100px;
+    background-color: gold;
+
+    border: 30px solid green;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+    overflow: hidden;
 }
