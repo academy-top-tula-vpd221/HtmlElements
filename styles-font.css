@@ -22,3 +22,60 @@
 .s-ob{
     font-size: 14px;
 }
+
+.text{
+    /*font: "Arial", serif 20px bold italic;*/
+    text-transform: lowercase;
+    /*
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    word-break: break-all;
+    */
+    text-align: justify;
+    text-align-last: left;
+    word-spacing: 0;
+    letter-spacing: 0;
+    text-indent: 20px
+}
+
+
+.text::first-letter{
+    text-transform: uppercase;
+}
+
+.phone{
+    word-wrap:normal;
+}
+
+.link{
+    text-decoration: none;
+    display: block;
+    background: url(images/ada.jpg) left top;
+}
+
+.box-img{
+    width: 200px;
+    height: 200px;
+    background: url(images/ada.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.ul-img{
+    /*list-style-type: square;*/
+    list-style-image: url(favicon.png);
+    list-style-position: outside;
+}
+
+.btn{
+    resize: horizontal;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.txt{
+    caret-color: red;
+    outline: gold solid;
+    outline-offset: 5px;
+}
